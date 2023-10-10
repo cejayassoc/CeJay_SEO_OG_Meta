@@ -1,19 +1,23 @@
 <?php
 /**
- * @package CeJay SEO OG Meta
- * @version 2.2
- */
+* CeJay SEO OG Meta
+*
+* @package cejay-seo-og-meta
+* @version 2.2
+* @license           GPL-2.0-or-later
+*/
 /*
-Plugin Name: CeJay SEO OG Meta
-Description: This plugin generates meta tags for SEO and Open Graph (OG) using custom fields and defaults.
-Version: 2.2
-Author: Lisa Baird
-Company: CeJay Websites
-Website: https://cejaywebsites.com
-
+* Plugin Name: CeJay SEO OG Meta
+* Description: This plugin generates meta tags for SEO (search engine optimization) and Open Graph (OG.)
+* Version: 2.2
+* Author: Lisa Baird
+* Company: CeJay Websites
+* Website: https://cejaywebsites.com
+* License:           GPL v2 or later
+* License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
-// Function to generate SEO and OG meta tags
+// Function to generate SEO meta and OG meta tags
 function cejay_magic_meta() {
     global $post;
     $cstmMeta = get_post_custom(get_the_ID());
