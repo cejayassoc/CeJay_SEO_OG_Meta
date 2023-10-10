@@ -1,12 +1,10 @@
-<?php
 /**
+* Plugin Name: CeJay SEO OG Meta
 * CeJay SEO OG Meta
 *
 * @package cejay-seo-og-meta
 * @version 2.2
 * @license           GPL-2.0-or-later
-*/
-/*
 * Plugin Name: CeJay SEO OG Meta
 * Description: This plugin generates meta tags for SEO (search engine optimization) and Open Graph (OG.)
 * Version: 2.2
