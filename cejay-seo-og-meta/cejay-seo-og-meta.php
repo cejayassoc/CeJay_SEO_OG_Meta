@@ -1,7 +1,16 @@
+<?php
 /**
-Plugin Name: CeJay SEO OG Meta
+* CeJay SEO OG Meta
+*
+* @package           PluginPackage
+* @author            Lisa Baird
+* @copyright         CeJay Websites
+* @license           GPL-2.0-or-later
+*
+* @wordpress-plugin
+ Plugin Name: CeJay SEO OG Meta
 Description: This plugin generates meta tags for SEO (search engine optimization) and Open Graph (OG.)
-Version: 2.2
+Version: 3.2
 Author: Lisa Baird
 Company: CeJay Websites
 Website: https://cejaywebsites.com
