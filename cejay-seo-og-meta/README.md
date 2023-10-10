@@ -1,5 +1,5 @@
 # CeJay_SEO_OG_Meta
-=== Plugin Name ===
+=== CeJay_SEO_OG_Meta ===
 Contributors: candeeg
 Tags: Mata, Meta Tags, OG, OG Tags, Facebook Meta, Twitter Meta, LinkedIn Meta
 Requires at least: 4.7
