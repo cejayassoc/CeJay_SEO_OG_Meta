@@ -3,7 +3,10 @@
 Plugin Name: CeJay SEO OG Meta
 Description: This plugin generates meta tags for SEO and Open Graph (OG) using custom fields and defaults.
 Version: 1.0
-Author: Your Name
+Author: Lisa Baird
+Company: CeJay Websites
+Website: https://cejaywebsites.com
+
 */
 
 // Function to generate SEO and OG meta tags
