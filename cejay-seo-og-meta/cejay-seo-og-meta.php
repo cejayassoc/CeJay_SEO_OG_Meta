@@ -65,6 +65,25 @@ function cejay_magic_meta() {
 
 // Hook the function to the wp_head action to add meta tags to the header
 add_action('wp_head', 'cejay_magic_meta');
+
+  /*** Featured image to RSS Feed. ***/
+    function dn_add_rss_image() {
+        global $post;
+    
+        $output = '';
+        if ( has_post_thumbnail( $post->ID ) ) {
+            $thumbnail_ID = get_post_thumbnail_id( $post->ID );
+            $thumbnail = wp_get_attachment_image_src( $thumbnail_ID, 'full' ); /** 'full' can be changed to 'medium' or 'thumbnail' */
+    
+            $output .= '<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" type="image/jpeg"';
+            $output .= ' url="'. $thumbnail[0] .'"';
+            $output .= ' width="100%"'; /** here you can add styles */
+            $output .= ' object-fit="cover"';
+            $output .= ' />';
+        }
+        echo $output;
+    }
+add_action( 'rss2_item', 'dn_add_rss_image' );
 /************** ENABLE CORS  ****************
 
 add_filter( 'allowed_http_origins', 'add_allowed_origins' );
