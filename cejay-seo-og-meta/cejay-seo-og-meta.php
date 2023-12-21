@@ -65,3 +65,19 @@ function cejay_magic_meta() {
 
 // Hook the function to the wp_head action to add meta tags to the header
 add_action('wp_head', 'cejay_magic_meta');
+/************** ENABLE CORS  ****************
+
+add_filter( 'allowed_http_origins', 'add_allowed_origins' );
+function add_allowed_origins( $origins ) {
+// allow origins from ssl and non-ssl addresses 
+    $origins[] = 'http://MyWebsite.com';
+    $origins[] = 'https://MyWebsite.com';    
+// allow origins from specific supdomain with or without SSL 
+    $origins[] = 'http://subdomain.MyWebsite.com';
+	$origins[] = 'https://subdomain.MyWebsite.com';
+// allow these specific origins 
+	$origins[] = 'https://reputationdatabase.com';
+	$origins[] = 'https://www.youtube-nocookie.com';
+	$origins[] = 'https://googleads.g.doubleclick.net/pagead/id';
+    return $origins;
+} */
